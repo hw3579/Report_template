@@ -1,78 +1,102 @@
 \section{Theory}
 %\label{sec:problem_description}
-In Experiment A1, the basic equations are Bernoulli's \eqref{Bernoulli} .
-%and the continuity equation.
-\begin{equation}
-\label{Bernoulli}
-\left[ \frac{p}{\gamma}+\frac{v^2}{2g}+z \right]_1 = 
-\left[ \frac{p}{\gamma}+\frac{v^2}{2g}+z \right]_2 
-\end{equation}
-As shown in the figure below, where 1 and 2 represent the surface of 
-the reservoir and the water discharge point.
-\begin{figure}[htb] % Here, top, bottom priority list
+There are three different types of flow meters, 
+each with a pressure tube in front of and behind the 
+meter to visualise the water pressure, as shown in figure \ref{Bf1},\ref{Bf2} and \ref{Bf3}.
+
+The water enters from the venturi flow meter and flows through variable area, the orifice, 
+then out of pipe. It should be noticed that there is an elbow between the venturi and variable area.
+
+\begin{figure}
     \centering
-    \includegraphics[scale=0.45]{Theory/figures/figure1.png}
-    \caption{Experimental Demonstration}
-    \label{fig:demo}
+\begin{minipage}[h]{0.33\textwidth} % Here, top, bottom priority list
+    \centering
+    \includegraphics[scale=0.5]{Results/B1.png}
+    \caption{Venture meter}
+    \label{Bf1}
+\end{minipage}
+\begin{minipage}[h]{0.3\textwidth}% Here, top, bottom priority list
+    \centering
+    \includegraphics[scale=0.5]{Results/B3.png}
+    \caption{Variable area meter}
+    \label{Bf2}
+\end{minipage}
+\begin{minipage}[h]{0.33\textwidth} % Here, top, bottom priority list
+    \centering
+    \includegraphics[scale=0.5]{Results/B2.png}
+    \caption{Orifice plate meter}
+    \label{Bf3}
+\end{minipage}
 \end{figure}
-%In Bernoulli's equation, because the position 1 is in contact with the air and the water surface is static, 
-%so the pressure force p = 0, and the water surface flow velocity v = 0. 
-%Similarly, the pressure at position 2 is p = 0. 
-%With the datum at 2, we only need to measure the head difference between position 1 and 2, 
-%and measure the jet velocity of 2, after that put into other constants, 
-%Bernoulli's equation could be proved.
-Because $p_1=0$ $p_2=0$ $v_1=0$ $z_1-z_2=h$, Bernoulli's equation can be simplified as
-\begin{equation}
-v_2=\sqrt{2gh}
-\label{1}
-\end{equation}
-Where $v_2$ is the water velocity in position 2, h is the head difference between 1 and 2.
-In fact, due to the jet vena contracta, it exists a coefficient $C_v$ to effect the real velocity.
-$C_v$ depends on the viscosity of the water, so $C_v < 1$.
-\begin{equation}
-    v=C_v\sqrt{2gh}
-    \label{2}
-\end{equation}
-By neglecting the air resistance, the x and y position could be caculated By
 
-$ x=vt$ $y=\frac{1}{2}gt^2$
+The definitions of the symbols are shown in table \ref{Bt1}.
 
-Hence,
-\begin{equation}
-    C_v=\frac{x}{2\sqrt{yh}}
-    \label{5}
-\end{equation}
-Also can be rewrite as
-\begin{equation}
-    x=2C_v\sqrt{yh}
-    \label{6}
-\end{equation}
-Hence, For a constant coefficient $C_v$, which can be determined from the x and y coordinates.
-In Experiment A2, the continuity equation is given by
-\begin{equation}
-\label{velocity}
-Q=Av
-\end{equation}
-%From this, we can calculate the real water flowrate.
-%Because the vena contracta decrease the cross-sectional area of jet flow,
-It also exists a coefficient $C_c$, which $C_c < 1$. Hence,
-\begin{equation}
-    \label{11}
-    A=C_cA_0
-\end{equation}
-Substitution for v from \eqref{2}, the results is
-\begin{equation}
-    \label{13}
-    Q_t=C_cA_0C_v\sqrt{2gh}=C_dA_0\sqrt{2gh}
-\end{equation}
-Which used the discharge coefficient$C_d$ to Substitute $C_c$ and $C_v$.($C_d=C_c*C_v$)
-This is also a linear equation with horizontal 
-coordinates $\sqrt{h}$ and vertical coordinates $Q_t$. The slope S =
-$C_dA_0\sqrt{2g}$.
+\begin{minipage}[t]{\textwidth}
+    \centering
+\makeatletter\def\@captype{table}
+\scalebox{1}{
+\begin{tabular}{ccc}
+    \toprule
+    Symbols                     & Definition                   & Expression \\
+    \midrule
+    $H_{Qv} $                     & Head difference in venture                & $h_1-h_2 $     \\
+    $H_{Qo} $                     & Head difference in orifice                 & $h_6-h_7 $    \\
+    $H_v $                  & Head loss in venture                  & $h_1-h_3 $     \\
+    $H_o $                   & Head loss in orifice                & $h_6-h_8 $   \\
+    $H_a $                   & Head loss in variable area                & $h_4-h_5 $   \\
+    $H_e $                   & Head loss in elbow               & $h_3-h_4 $   \\
+   \bottomrule
+\end{tabular}}
+\caption{Symbol definitions}
+\label{Bt1}
+\end{minipage}
 
-%Notice:  the water jet velocity measured by experiment A exists a 
-%certain error.
-%The flow rate measured by experiment A2 is a relatively smaller error.
-%(see in section: Analysis %\autoref{sec:analysis}
-%)
+
+
+
+In Bernoulli's and continuity equations, for the venture meter,
+\begin{equation}
+    z_1+\frac{P_1}{\gamma}+\frac{v_1^2}{2g}=z_2+\frac{P_2}{\gamma}+\frac{v_2^2}{2g}
+    \label{Be1}
+\end{equation}
+\begin{equation}
+    Q_1=Q_2=A_1v_1=A_2v_2
+    \label{Be2}
+\end{equation}
+Define $\Delta H$ as $h_1 - h_2 $, Hence,
+\begin{equation}
+    \Delta H=\left[z_1+\frac{P_1}{\gamma}\right]-\left[z_2+\frac{P_2}{\gamma}\right]
+    \label{Be3}
+\end{equation}
+From equation \eqref{Bf1},\eqref{Bf2} and \eqref{Bf3}, 
+\begin{equation}
+    v_2=\sqrt{2g\Delta H}*\frac{A_1}{\sqrt{A_1^2-A_2^2}}
+    \label{Be4}
+\end{equation}
+Due to the existence of discharge coefficients for the venturi and orifice, 
+it is assumed that $C_d=0.98$ for venture and $C_d=0.63$ for orifice.
+\begin{equation}
+    Q_{actual}=C_d Q_{theoretical}=C_dA_2V_2=C_d\frac{A_1A_2}{\sqrt{A_1^2-A_2^2}}\sqrt{2g\Delta H}
+    \label{Be5}
+\end{equation}
+Finally, the $Q_o$ and $Q_v$ could be write as
+\begin{equation}
+   Q_o=\frac{0.63A_2\sqrt{2g\Delta H_{Qo}}}{\sqrt{1-(\frac{A_2}{A_1})^2}}
+    \label{Be6}
+\end{equation}
+\begin{equation}
+    Q_v=\frac{0.98A_2\sqrt{2g\Delta H_{Qv}}}{\sqrt{1-(\frac{A_2}{A_1})^2}}
+     \label{Be7}
+ \end{equation}
+ 
+For the variable area, there is a visual scale display.
+This gives a very visibly readable indication of the flow of water.
+
+For the elbow, head loss can be represented as 
+\begin{equation}
+    H_e=h_3-h_4=k\frac{v^2}{2g}
+    \label{Be8}
+\end{equation}
+Which k is the coefficient of the elbow loss.
+
 
