@@ -6,6 +6,7 @@ The experiment data is shown in the following table.
 
 \begin{table}[htb]
     \centering
+    \scalebox{0.9}{
     \begin{tabular}{l|l|l|llllllll}
     \hline
     No.&  & X=    & 43 & 93  & 143 & 193 & 243 & 293 & 343  & 393   \\ 
@@ -18,19 +19,18 @@ The experiment data is shown in the following table.
     \cline{3-11}
     4 &    & h=380 & -1 & -8  & -16 & -28 & -44 & -62 & -84  & -110  \\
     \hline
-    \end{tabular}
+    \end{tabular}}
 
     (unit:mm)
     \caption{attachment sheet recording table}
     \label{t1} 
 \end{table}
 
-
 \begin{minipage}{\textwidth}
-
     \begin{minipage}[t]{0.5\textwidth}
         \centering
     \makeatletter\def\@captype{table}
+    \scalebox{0.9}{
     \begin{tabular}{cccc}
         \toprule
         h(mm)                       & V(ml)                    & T(s)&Q= $\frac{V}{T}$ (L/s)  \\
@@ -40,12 +40,13 @@ The experiment data is shown in the following table.
         333.5                   & 830                  & 64 &0.0130    \\
         365                     & 855                  & 64 &0.0134    \\
         \bottomrule
-    \end{tabular}
+    \end{tabular}}
     \caption{record of flowrate (diameter:3mm)}
     \end{minipage}
     \begin{minipage}[t]{0.5\textwidth}
         \centering
     \makeatletter\def\@captype{table}
+    \scalebox{0.9}{
     \begin{tabular}{cccc}
         \toprule
         h(mm)                       & V(ml)                    & T(s)&Q= $\frac{V}{T}$ (L/s)  \\
@@ -55,11 +56,11 @@ The experiment data is shown in the following table.
         333.5                   & 830                  & 64  &0.0510   \\
         365                     & 855                  & 64  &0.0538   \\
         \bottomrule
-    \end{tabular}
+    \end{tabular}}
     \caption{record of flowrate (diameter:6mm)}
     \end{minipage}
-    \end{minipage}
-    
+\end{minipage}
+
 
 \FloatBarrier % Now the table doesn't flow over to any other sections
 
