@@ -7,7 +7,7 @@ Using the data in Table \ref{Bt2} and equations \eqref{Be6},\eqref{Be7} to calcu
 
 \begin{table}[h]
     \centering
-    \scalebox{1.0}{
+    \scalebox{0.9}{
 \begin{tabular}{ccccccc}
     \toprule
     $H_{Qv}$ & $H_{Qo}$ &$H_{Qa}$ &$Q_v$  & $Q_o$   & $Q_a$  & $Q_{actual}$  \\
@@ -24,9 +24,9 @@ Using the data in Table \ref{Bt2} and equations \eqref{Be6},\eqref{Be7} to calcu
 \label{Bt4}
 \end{table}
 
-The regression analysis figure is in figure \ref{Bf4}.
+The regression analysis figure is in figure \ref{Bf4} and data in \ref{Bt5}.
 
-\begin{figure}[htb] % Here, top, bottom priority list
+\begin{figure}[h] % Here, top, bottom priority list
     \centering
     \includegraphics[scale=1.1]{Results/B.eps}
     \caption{Regression analysis}
@@ -37,7 +37,7 @@ The regression analysis figure is in figure \ref{Bf4}.
   \begin{minipage}[h]{0.49\textwidth}
     \makeatletter\def\@captype{table}
     \centering
-    \scalebox{1}{
+    \scalebox{0.9}{
     \begin{tabular}{l|ll} 
         \hline
             & Slope ($*10^6$)    & R-square \\ \hline
@@ -68,18 +68,15 @@ The regression analysis figure is in figure \ref{Bf4}.
 \end{minipage}
 
 
-
-
 \subsection{Error analysis}
+\begin{equation}
+    Error=\frac{|Q_v-Q_t|}{Q_t}*100\%
+    \label{Be9}
+\end{equation}
 The results is shown in the table \ref{Bt6}.
 The error for each flowmeter is calculated 
 by using the final outflow flow rate ($Q_{actual}$) as the criterion.
 
-The results is shown in the table \ref{Bt6}.
+Here are some of the reasons for the errors
 
-\begin{equation}
-    Error=\frac{|Q_a-Q_t|}{Q_t}*100\%
-    \label{Be9}
-\end{equation}
-
-\FloatBarrier
+$\bullet$  
