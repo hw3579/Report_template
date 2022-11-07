@@ -1,97 +1,85 @@
 \section{Analysis}
 \label{sec:analysis}
 \subsection{Regression analysis}
-For experimentA1,
-Plot a scatter chart with $\sqrt{gh}$ as the horizontal coordinate 
-and x as the vertical coordinate based on the data from Table \ref{t1}.
-And a regression analysis and linear fit was performed on the data, 
-as shown in \autoref{ExperimentA1} and results in \autoref{table4}.
 
-Take the average of 
-the data and take it into equation \eqref{6} to get $C_v=\frac{slope}{2}$.
-The final $C_v$ is 0.955.
+Using the data in Table \ref{Bt2} and equations \eqref{Be6},\eqref{Be7} to calculate the $Q_o$ and $Q_v$.
 
-For experiment A2, it is the same as experiment A1, with the horizontal 
-coordinates replaced by $\sqrt{h}$ and the vertical coordinates replaced by Q
-the data of regression analysis is in \autoref{ExperimentA2}
-and results in \autoref{table5}.
 
-Use equation \eqref{13} to caculate the $C_d=\frac{Slope}{A_0\sqrt{2g}}$
-and the final $C_d$ is 0.615 (3mm)
-and 0.8816 (6mm).
-
-\begin{figure}[h]
+\begin{table}[h]
     \centering
-    \begin{minipage}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=1.12\linewidth]{Results/1.eps}
-        \caption{ExperimentA1}
-        \label{ExperimentA1}
-        (Unit:mm)
-    \end{minipage}
-    \begin{minipage}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=1.12\linewidth]{Results/A2.eps}
-        \caption{ExperimentA2}
-        \label{ExperimentA2}
-       (Unit:$\sqrt{m}$ and $m^3/s$)
-    \end{minipage}
+    \scalebox{1.0}{
+\begin{tabular}{ccccccc}
+    \toprule
+    $H_{Qv}$ & $H_{Qo}$ &$H_{Qa}$ &$Q_v$  & $Q_o$   & $Q_a$  & $Q_{actual}$  \\
+    \midrule
+    17&10  &54&0.000102725    & 0.0000953964    & 0.000083333   & 0.0000976 \\
+    49&33  &56&0.000174402    &  0.000173296    & 0.000166667    & 0.000173 \\
+    107&74  &65&0.000257718    & 0.000259506    &   0.00025    & 0.000251 \\
+    195&137  &73&0.000347913    & 0.000353096    & 0.000333333    & 0.000341 \\
+    \bottomrule
+\end{tabular}}
+
+(Unit of H: $mm$ and Q: $m^3/s$)
+\caption{Flow rates measured by different methods}
+\label{Bt4}
+\end{table}
+
+The regression analysis figure is in figure \ref{Bf4}.
+
+\begin{figure}[htb] % Here, top, bottom priority list
+    \centering
+    \includegraphics[scale=1.1]{Results/B.eps}
+    \caption{Regression analysis}
+    \label{Bf4}
 \end{figure}
 
-\begin{minipage}{\textwidth}
-    \centering
-\begin{minipage}[t]{0.49\textwidth}
+\begin{minipage}[h]{\textwidth}
+  \begin{minipage}[h]{0.49\textwidth}
     \makeatletter\def\@captype{table}
     \centering
-    \scalebox{0.9}{
+    \scalebox{1}{
     \begin{tabular}{l|ll} 
         \hline
-            & Slope    & R-square \\ \hline
-        1 & 1.923 & 0.9968   \\
-        2 & 1.923 & 0.9976   \\
-        3 & 1.855 & 0.9985   \\
-        4 & 1.936 & 0.998   \\ \hline          
+            & Slope ($*10^6$)    & R-square \\ \hline
+        $Q_v$ & 1.611 & 1  \\
+        $Q_o$ & 1.099 & 1   \\
+        $Q_a$ & 1.909 & 0.9855   \\\hline       
     \end{tabular}} 
-    \caption{result of A1 regression analysis}
-    \label{table4} 
-\end{minipage}
-\begin{minipage}[t]{0.49\textwidth}
+    \caption{result of regression analysis}
+    \label{Bt5} 
+  \end{minipage}
+  \begin{minipage}{0.49\textwidth}
     \makeatletter\def\@captype{table}
     \centering
-    \scalebox{0.9}{
-    \begin{tabular}{l|ll}
-        \hline
-            & Slope    & R-square \\ \hline
-        3mm & 0.00001924 & 0.9955   \\
-        6mm & 0.0001103 & 0.9811   \\ \hline
-        \end{tabular}}
-    \caption{result of A2 regression analysis}
-    \label{table5} 
-\end{minipage}
+    \scalebox{0.8}{
+    \begin{tabular}{cccc}
+        \toprule
+    Flowrate(L/min)     & $Q_v$  & $Q_o$   & $Q_a$\\
+        \midrule
+5 & 2.233992 & 5.277012 & 14.59668 \\
+10 & 0.396002 & 1.036594 & 3.444661 \\
+15 & 3.22237  & 2.51114  & 0.558865 \\
+20 & 3.514961 & 1.99558  & 2.2786 \\
+\bottomrule
+    \end{tabular}}
+    \caption{result of regression analysis}
+    \label{Bt6}
+  \end{minipage}  
 \end{minipage}
 
 
-%\begin{table}[h]
-%    \centering
-%    \begin{tabular}{l|ll}
-%    \hline
-%        & Slope    & R-square \\ \hline
-%    3mm & 0.00001924 & 0.9955   \\
-%    6mm & 0.0001103 & 0.9811   \\ \hline
-%    \end{tabular}
-%    \caption{result of A2 regression analysis}
-%    \label{table5}
-%\end{table}
+
 
 \subsection{Error analysis}
+The results is shown in the table \ref{Bt6}.
+The error for each flowmeter is calculated 
+by using the final outflow flow rate ($Q_{actual}$) as the criterion.
 
-$\bullet$ Inaccurate recording of water trajectory to the sheet 
-due to not looking horizontally at the top point of the needle.
+The results is shown in the table \ref{Bt6}.
 
-$\bullet$ Inaccurate calculation of the flow rate due to residual 
-water in the measuring cylinder.
-
-$\bullet$ When calculating the flow rate, errors caused by the stopwatch timing not being fully 
-synchronised with the water collection time.
+\begin{equation}
+    Error=\frac{|Q_a-Q_t|}{Q_t}*100\%
+    \label{Be9}
+\end{equation}
 
 \FloatBarrier
