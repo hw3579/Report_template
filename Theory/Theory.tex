@@ -31,6 +31,16 @@ then out of pipe. It should be noticed that there is an elbow between the ventur
 
 The definitions of the symbols are shown in table \ref{Bt1}.
 
+In Bernoulli's and continuity equations, for the venture meter,
+\begin{equation}
+    z_1+\frac{P_1}{\gamma}+\frac{v_1^2}{2g}=z_2+\frac{P_2}{\gamma}+\frac{v_2^2}{2g}
+    \label{Be1}
+\end{equation}
+\begin{equation}
+    Q_1=Q_2=A_1v_1=A_2v_2
+    \label{Be2}
+\end{equation}
+
 \begin{minipage}[t]{\textwidth}
     \centering
 \makeatletter\def\@captype{table}
@@ -53,16 +63,6 @@ The definitions of the symbols are shown in table \ref{Bt1}.
 
 
 
-
-In Bernoulli's and continuity equations, for the venture meter,
-\begin{equation}
-    z_1+\frac{P_1}{\gamma}+\frac{v_1^2}{2g}=z_2+\frac{P_2}{\gamma}+\frac{v_2^2}{2g}
-    \label{Be1}
-\end{equation}
-\begin{equation}
-    Q_1=Q_2=A_1v_1=A_2v_2
-    \label{Be2}
-\end{equation}
 Define $\Delta H$ as $h_1 - h_2 $, Hence,
 \begin{equation}
     \Delta H=\left[z_1+\frac{P_1}{\gamma}\right]-\left[z_2+\frac{P_2}{\gamma}\right]
@@ -80,14 +80,14 @@ it is assumed that $C_d=0.98$ for venture and $C_d=0.63$ for orifice.
     \label{Be5}
 \end{equation}
 Finally, the $Q_o$ and $Q_v$ could be write as
-\begin{equation}
-   Q_o=\frac{0.63A_2\sqrt{2g\Delta H_{Qo}}}{\sqrt{1-(\frac{A_2}{A_1})^2}}
+\begin{align}
+   Q_o=\frac{0.63A_2\sqrt{2g\Delta H_{Qo}}}{\sqrt{1-(\frac{A_2}{A_1})^2}} &   & Q_v=\frac{0.98A_2\sqrt{2g\Delta H_{Qv}}}{\sqrt{1-(\frac{A_2}{A_1})^2}}
     \label{Be6}
-\end{equation}
-\begin{equation}
-    Q_v=\frac{0.98A_2\sqrt{2g\Delta H_{Qv}}}{\sqrt{1-(\frac{A_2}{A_1})^2}}
-     \label{Be7}
- \end{equation}
+\end{align}
+%\begin{equation}
+%    Q_v=\frac{0.98A_2\sqrt{2g\Delta H_{Qv}}}{\sqrt{1-(\frac{A_2}{A_1})^2}}
+%     \label{Be7}
+% \end{equation}
  
 For the variable area, there is a visual scale display.
 This gives a very visibly readable indication of the flow of water.
@@ -98,5 +98,4 @@ For the elbow, head loss can be represented as
     \label{Be8}
 \end{equation}
 Which k is the coefficient of the elbow loss.
-
 
